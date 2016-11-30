@@ -151,5 +151,29 @@ class Object_Appliance(fd_types.Assembly):
         ass_obj.set_name(get_file_name(self.appliance_path))
         self.obj_x.empty_draw_size = unit.inch(1)
         self.obj_y.empty_draw_size = unit.inch(1)
-        self.obj_z.empty_draw_size = unit.inch(1)      
+        self.obj_z.empty_draw_size = unit.inch(1) 
+        
+        
+class Built_In_Appliance(fd_types.Assembly):
+    
+    library_name = appliance_properties.LIBRARY_FOLDER_NAME
+    type_assembly = "NONE"
+    
+    """ Path to blend file that contains a group of the appliance """
+    appliance_path = ""
+#     drop_id = appliance_properties.LIBRARY_NAME_SPACE + ".place_countertop_appliance"
+
+    def draw(self):
+        self.create_assembly()
+        assembly = self.add_assembly(file_path = self.appliance_path)
+        assembly.set_name(get_file_name(self.appliance_path))
+        self.width = assembly.obj_x.location.x
+        self.height = assembly.obj_z.location.z
+        self.depth = assembly.obj_y.location.y
+        assembly.assign_material("Chrome",MATERIAL_FILE,"Chrome")
+        assembly.assign_material("Stainless Steel",MATERIAL_FILE,"Stainless Steel")
+        assembly.assign_material("Black Anodized Metal",MATERIAL_FILE,"Black Anodized Metal")
+        
+        
+                             
         

@@ -10,8 +10,11 @@ from . import appliance_classes
 
 BATHROOM_SINK_PATH = os.path.join(os.path.dirname(__file__),"Bathroom_Sinks")
 BATHROOM_FAUCETS_PATH = os.path.join(os.path.dirname(__file__),"Bathroom Faucets")
+BATHTUBS_PATH = os.path.join(os.path.dirname(__file__),"Bathtubs")
+FLOOR_MOUNT_FAUCETS_PATH = os.path.join(os.path.dirname(__file__),"Floor Mount Faucets")
 KITCHEN_FAUCETS_PATH = os.path.join(os.path.dirname(__file__),"Kitchen Faucets")
-
+KITCHEN_SINKS_PATH = os.path.join(os.path.dirname(__file__),"Kitchen_sinks")
+TOILET_PATH = os.path.join(os.path.dirname(__file__),"Toilets")  
 #---------PRODUCT: BATHROOM SINKS    
 
 class PRODUCT_Bachata_2609_MU(appliance_classes.Countertop_Appliance):
@@ -504,9 +507,90 @@ class PRODUCT_Willamette_R99901_4D(appliance_classes.Object_Appliance):
     def __init__(self):
         self.category_name = "Bathroom Faucets"
         self.assembly_name = "Willamette R99901-4D"
-        self.appliance_path = os.path.join(BATHROOM_FAUCETS_PATH,"Willamette R99901-4D.blend")          
-                                      
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        self.appliance_path = os.path.join(BATHROOM_FAUCETS_PATH,"Willamette R99901-4D.blend")
+        
+#------------ PRODUCT: BATHTUBS
+
+class PRODUCT_Dynametric_520_0(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Bathtubs"
+        self.assembly_name = "Dynametric 520-0"
+        self.appliance_path = os.path.join(BATHTUBS_PATH,"Dynametric 520-0.blend")        
+        
+class PRODUCT_Iron_Works_710_W(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Bathtubs"
+        self.assembly_name = "Iron Works 710-W"
+        self.appliance_path = os.path.join(BATHTUBS_PATH,"Iron Works 710-W.blend")        
+        
+class PRODUCT_Reve_894(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Bathtubs"
+        self.assembly_name = "Reve 894"
+        self.appliance_path = os.path.join(BATHTUBS_PATH,"Reve 894.blend")        
+                        
+class PRODUCT_Stargaze_6367(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Bathtubs"
+        self.assembly_name = "Stargaze 6367"
+        self.appliance_path = os.path.join(BATHTUBS_PATH,"Stargaze 6367.blend")        
+                                
+class PRODUCT_Sunstruck_6368(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Bathtubs"
+        self.assembly_name = "Sunstruck 6368"
+        self.appliance_path = os.path.join(BATHTUBS_PATH,"Sunstruck 6368.blend")          
+        
+class PRODUCT_Villager_715_0(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Bathtubs"
+        self.assembly_name = "Villager 715-0"
+        self.appliance_path = os.path.join(BATHTUBS_PATH,"Villager 715-0.blend")          
+                
+class PRODUCT_Vintage_700_0(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Bathtubs"
+        self.assembly_name = "Vintage 700-0"
+        self.appliance_path = os.path.join(BATHTUBS_PATH,"Vintage 700-0.blend") 
+        
+        
+#------- PRODUCT: FLOOR MOUNT FAUCETS
+
+class PRODUCT_Kelston_T97332_4(appliance_classes.Object_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Floor Mount Faucets"
+        self.assembly_name = "Kelston T97332-4"
+        self.appliance_path = os.path.join(FLOOR_MOUNT_FAUCETS_PATH,"Kelston T97332-4.blend")                                           
+                                                               
+class PRODUCT_Loure_T97330_4(appliance_classes.Object_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Floor Mount Faucets"
+        self.assembly_name = "Loure T97330-4"
+        self.appliance_path = os.path.join(FLOOR_MOUNT_FAUCETS_PATH,"Loure T97330-4.blend")                                           
+                                                              
+class PRODUCT_Margaux_T97331_4(appliance_classes.Object_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Floor Mount Faucets"
+        self.assembly_name = "Margaux T97331-4"
+        self.appliance_path = os.path.join(FLOOR_MOUNT_FAUCETS_PATH,"Margaux T97331-4.blend")                                           
+                                                              
+class PRODUCT_Purist_T97328_4(appliance_classes.Object_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Floor Mount Faucets"
+        self.assembly_name = "Purist T97328-4"
+        self.appliance_path = os.path.join(FLOOR_MOUNT_FAUCETS_PATH,"Purist T97328-4.blend")                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 #---------PRODUCT: KITCHEN FAUCETS             
 
 class PRODUCT_Antique_149_3(appliance_classes.Object_Appliance):
@@ -612,7 +696,7 @@ class PRODUCT_Artifacts_99270(appliance_classes.Object_Appliance):
     def __init__(self):
         self.category_name = "Kitchen Faucets"
         self.assembly_name = "Artifacts 99270"
-        self.appliance_path = os.path.join(KITCHEN_FAUCETS_PATH,"Artifacts 992708.blend")         
+        self.appliance_path = os.path.join(KITCHEN_FAUCETS_PATH,"Artifacts 99270.blend")         
                                                                                
 class PRODUCT_Artifacts_99271(appliance_classes.Object_Appliance):
     
@@ -936,6 +1020,142 @@ class PRODUCT_Wellspring_6666(appliance_classes.Object_Appliance):
         self.assembly_name = "Wellspring 6666"
         self.appliance_path = os.path.join(KITCHEN_FAUCETS_PATH,"Wellspring 6666.blend")                      
                                                                                       
+#--------PRODUCT: KITCHEN SINKS
+
+class PRODUCT_Cape_Dory_5863(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Cape Dory 5863"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Cape Dory 5863.blend")         
+ 
+class PRODUCT_Hartland_5818(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Hartland 5818"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Hartland 5818.blend")         
+  
+class PRODUCT_Octave_3842(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Octave 3842"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Octave 3842.blend")         
+   
+ 
+class PRODUCT_Prolific_5540(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Prolific 5540"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Prolific 5540.blend")         
+   
+class PRODUCT_Riverby_5871(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Riverby 5871"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Riverby 5871.blend")  
+ 
+class PRODUCT_Riverby_8669(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Riverby 8669"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Riverby 8669.blend")  
+  
+class PRODUCT_Riverby_8679(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Riverby 8679"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Riverby 8679.blend")  
+   
+class PRODUCT_Riverby_8689(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Riverby 8689"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Riverby 8689.blend")  
+   
+class PRODUCT_Stages_3760(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Stages 3760"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Stages 3760.blend")  
+     
+class PRODUCT_Stages_3761(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Stages 3761"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Stages 3761.blend")   
+ 
+class PRODUCT_Strive_5281(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Strive 5281"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Strive 5281.blend")  
         
+#-------- PRODUCT: TOILETS
+
+class PRODUCT_Cimarron_6418_0(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Toilets"
+        self.assembly_name = "Cimarron 6418-0"
+        self.appliance_path = os.path.join(TOILET_PATH,"Cimarron 6418-0.blend")        
+         
+class PRODUCT_Cimarron_6418_7(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Toilets"
+        self.assembly_name = "Cimarron 6418-7"
+        self.appliance_path = os.path.join(TOILET_PATH,"Cimarron 6418-7.blend")        
+         
+class PRODUCT_San_Souci_4000_0(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Toilets"
+        self.assembly_name = "San Souci 4000-0"
+        self.appliance_path = os.path.join(TOILET_PATH,"San Souci 4000-0.blend")        
+         
+class PRODUCT_San_Souci_4000_7(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Toilets"
+        self.assembly_name = "San Souci 4000-7"
+        self.appliance_path = os.path.join(TOILET_PATH,"San Souci 4000-7.blend")        
+         
+class PRODUCT_Veil_6299_0(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Toilets"
+        self.assembly_name = "Veil 6299-0"
+        self.appliance_path = os.path.join(TOILET_PATH,"Veil 6299-0.blend")        
+         
+class PRODUCT_Veil_6299_7(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Toilets"
+        self.assembly_name = "Veil 6299-7"
+        self.appliance_path = os.path.join(TOILET_PATH,"Veil 6299-7.blend")        
+                                 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
         
            
