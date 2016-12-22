@@ -10,11 +10,14 @@ from . import appliance_classes
 
 BATHROOM_SINK_PATH = os.path.join(os.path.dirname(__file__),"Bathroom_Sinks")
 BATHROOM_FAUCETS_PATH = os.path.join(os.path.dirname(__file__),"Bathroom Faucets")
+BATHROOM_SHOWER_FAUCETS_PATH = os.path.join(os.path.dirname(__file__),"Shower Faucets")
 BATHTUBS_PATH = os.path.join(os.path.dirname(__file__),"Bathtubs")
 FLOOR_MOUNT_FAUCETS_PATH = os.path.join(os.path.dirname(__file__),"Floor Mount Faucets")
 KITCHEN_FAUCETS_PATH = os.path.join(os.path.dirname(__file__),"Kitchen Faucets")
 KITCHEN_SINKS_PATH = os.path.join(os.path.dirname(__file__),"Kitchen_sinks")
-TOILET_PATH = os.path.join(os.path.dirname(__file__),"Toilets")  
+TOILET_PATH = os.path.join(os.path.dirname(__file__),"Toilets")
+SHOWER_WALL_PANELS_PATH = os.path.join(os.path.dirname(__file__),"Shower Wall Panels") 
+SHOWER_DOOR_PATH = os.path.join(os.path.dirname(__file__),"Shower Doors") 
 #---------PRODUCT: BATHROOM SINKS    
 
 class PRODUCT_Bachata_2609_MU(appliance_classes.Countertop_Appliance):
@@ -509,6 +512,39 @@ class PRODUCT_Willamette_R99901_4D(appliance_classes.Object_Appliance):
         self.assembly_name = "Willamette R99901-4D"
         self.appliance_path = os.path.join(BATHROOM_FAUCETS_PATH,"Willamette R99901-4D.blend")
         
+        
+        
+#------------ PRODUCTS: SHOWER FAUCETS
+class PRODUCT_Contemporary_13690(appliance_classes.Object_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Shower Faucets"
+        self.assembly_name = "Contemporary 13690"
+        self.appliance_path = os.path.join(BATHROOM_SHOWER_FAUCETS_PATH,"Contemporary 13690.blend")
+                
+class PRODUCT_Contemporary_13696(appliance_classes.Object_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Shower Faucets"
+        self.assembly_name = "Contemporary 13696"
+        self.appliance_path = os.path.join(BATHROOM_SHOWER_FAUCETS_PATH,"Contemporary 13696.blend")
+        
+class PRODUCT_Purist_9059(appliance_classes.Object_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Shower Faucets"
+        self.assembly_name = "Purist 9059"
+        self.appliance_path = os.path.join(BATHROOM_SHOWER_FAUCETS_PATH,"Purist 9059.blend")
+                
+class PRODUCT_Devonshire_T395_4(appliance_classes.Object_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Shower Faucets"
+        self.assembly_name = "Devonshire T395-4"
+        self.appliance_path = os.path.join(BATHROOM_SHOWER_FAUCETS_PATH,"Devonshire T395-4.blend")
+                        
+        
+                        
 #------------ PRODUCT: BATHTUBS
 
 class PRODUCT_Dynametric_520_0(appliance_classes.Static_Wall_Appliance):
@@ -1142,11 +1178,33 @@ class PRODUCT_Veil_6299_7(appliance_classes.Static_Wall_Appliance):
     def __init__(self):
         self.category_name = "Toilets"
         self.assembly_name = "Veil 6299-7"
-        self.appliance_path = os.path.join(TOILET_PATH,"Veil 6299-7.blend")        
+        self.appliance_path = os.path.join(TOILET_PATH,"Veil 6299-7.blend")
+        
+#-------- PRODUCT: SHOWER WALL PANELS
+
+class PRODUCT_Choreograph_Cord_97601_T02(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Shower Wall Panels"
+        self.assembly_name = "Choreograph Cord 97601-T02"
+        self.appliance_path = os.path.join(SHOWER_WALL_PANELS_PATH,"Choreograph Cord 97601-T02.blend")                
                                  
+class PRODUCT_Choreograph_Brick_97601_T02(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Shower Wall Panels"
+        self.assembly_name = "Choreograph Brick 97601-T02"
+        self.appliance_path = os.path.join(SHOWER_WALL_PANELS_PATH,"Choreograph Brick 97601-T02.blend")
+        
+#--------- PRODUCT: SHOWER DOORS          
  
- 
- 
+class PRODUCT_Revel_70x40(appliance_classes.Static_Wall_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Shower Doors"
+        self.assembly_name = "Revel 70x40"
+        self.appliance_path = os.path.join(SHOWER_DOOR_PATH,"Revel 70x40.blend")
+         
  
  
  
