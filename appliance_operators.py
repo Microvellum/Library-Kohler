@@ -60,7 +60,10 @@ class OPERATOR_Place_Countertop_Appliance(bpy.types.Operator):
                 product_depth = math.fabs(product.obj_y.location.y)
                 assembly_depth = math.fabs(self.assembly.obj_y.location.y)
                 self.assembly.obj_bp.parent = product.obj_bp
-                self.assembly.obj_bp.location.z = product.obj_z.location.z + unit.inch(1.5)
+                if product.obj_z.location.z < 0:
+                    self.assembly.obj_bp.location.z = unit.inch(1.5) #SUSPENDED CABINETS
+                else:
+                    self.assembly.obj_bp.location.z = product.obj_z.location.z + unit.inch(1.5) #BASE CABINETS
                 self.assembly.obj_bp.location.y = -math.fabs(product_depth-assembly_depth)/2
                 self.assembly.obj_bp.location.x = product.obj_x.location.x/2 - self.assembly.obj_x.location.x/2
 
