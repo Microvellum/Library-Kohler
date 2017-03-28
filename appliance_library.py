@@ -1136,6 +1136,13 @@ class PRODUCT_Strive_5281(appliance_classes.Countertop_Appliance):
         self.assembly_name = "Strive 5281"
         self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Strive 5281.blend")  
         
+class PRODUCT_Whitehaven_6489(appliance_classes.Countertop_Appliance):
+    
+    def __init__(self):
+        self.category_name = "Kitchen Sinks"
+        self.assembly_name = "Whitehaven 6489"
+        self.appliance_path = os.path.join(KITCHEN_SINKS_PATH,"Whitehaven 6489.blend")          
+        
 #-------- PRODUCT: TOILETS
 
 class PRODUCT_Cimarron_6418_0(appliance_classes.Static_Wall_Appliance):
